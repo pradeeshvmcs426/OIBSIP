@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temperature converter using Celsius, Fahrenheit and Kelvin.">
+  <title>Temperature Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="converter">
+      <div class="intro">
+        <p class="eyebrow">OASIS INFOBYTE • WEB DEVELOPMENT</p>
+        <h1>Temperature Converter</h1>
+        <p>
+          Convert a temperature between Celsius, Fahrenheit and Kelvin with instant validation.
+        </p>
+      </div>
+
+      <form id="converterForm" novalidate>
+        <label for="temperature">Temperature value</label>
+        <input id="temperature" name="temperature" type="number" step="any" placeholder="e.g. 37" />
+
+        <label for="unit">Input unit</label>
+        <select id="unit" name="unit">
+          <option value="celsius">Celsius (°C)</option>
+          <option value="fahrenheit">Fahrenheit (°F)</option>
+          <option value="kelvin">Kelvin (K)</option>
+        </select>
+
+        <button type="submit">Convert Temperature</button>
+        <p id="errorMessage" class="message error" aria-live="polite"></p>
+      </form>
+
+      <section class="results" aria-live="polite">
+        <h2>Converted values</h2>
+        <div class="result-grid">
+          <article>
+            <span>Celsius</span>
+            <strong id="celsiusResult">—</strong>
+          </article>
+          <article>
+            <span>Fahrenheit</span>
+            <strong id="fahrenheitResult">—</strong>
+          </article>
+          <article>
+            <span>Kelvin</span>
+            <strong id="kelvinResult">—</strong>
+          </article>
+        </div>
+        <p id="successMessage" class="message success"></p>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
