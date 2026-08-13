@@ -3,118 +3,654 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NovaLaunch - a clean landing page for a modern digital product.">
-  <title>Tech Flow | Landing Page</title>
+  <meta name="description" content="TechFlow - modern digital workflow landing page.">
+  <title>TechFlow | Smart Digital Workflow</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
 </head>
+
 <body>
+
+  <!-- Background decorative glow -->
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <!-- ================= NAVBAR ================= -->
   <header class="navbar">
-    <a class="brand" href="#home">Tech<span>Flow</span></a>
+
+    <a class="brand" href="#home">
+      Tech<span>Flow</span>
+    </a>
+
     <nav aria-label="Primary navigation">
       <a href="#features">Features</a>
       <a href="#about">About</a>
       <a href="#reviews">Reviews</a>
     </nav>
-    <a class="nav-cta" href="#contact">Get Started</a>
+
+    <a class="nav-cta" href="#contact">
+      Get Started <span>→</span>
+    </a>
+
   </header>
 
+
   <main>
+
+    <!-- ================= HERO ================= -->
     <section class="hero" id="home">
+
       <div class="hero-content">
-        <p class="eyebrow">SMARTER WORK • SIMPLE RESULTS</p>
-        <h1>Build better ideas with a cleaner digital workflow.</h1>
+
+        <div class="badge">
+          <span class="badge-dot"></span>
+          SMARTER WORK • SIMPLE RESULTS
+        </div>
+
+        <h1>
+          Turn your ideas into
+          <span class="gradient-text">real progress.</span>
+        </h1>
+
         <p class="hero-text">
-          NovaLaunch is a simple concept product for organizing projects, collaborating with your team,
-          and turning ideas into results.
+          TechFlow is a modern workspace for planning projects,
+          collaborating with your team, and keeping every important
+          task moving forward.
         </p>
+
         <div class="hero-actions">
-          <a class="btn primary" href="#contact">Start Exploring</a>
-          <a class="btn secondary" href="#features">View Features</a>
-        </div>
-      </div>
 
-      <div class="hero-card" aria-label="Product preview">
-        <div class="window-bar"><span></span><span></span><span></span></div>
-        <div class="mini-dashboard">
-          <div class="mini-sidebar"></div>
-          <div class="mini-main">
-            <div class="mini-title"></div>
-            <div class="mini-grid">
-              <div></div><div></div><div></div>
-            </div>
-            <div class="mini-chart"></div>
+          <a class="btn primary" href="#features">
+            Start Exploring <span>↗</span>
+          </a>
+
+          <a class="btn secondary" href="#about">
+            Learn More
+          </a>
+
+        </div>
+
+
+        <!-- Small social proof -->
+        <div class="hero-proof">
+
+          <div class="avatars">
+            <span>AR</span>
+            <span>JM</span>
+            <span>PK</span>
           </div>
+
+          <div>
+            <strong>1,200+ teams</strong>
+            <p>organizing work with TechFlow</p>
+          </div>
+
         </div>
+
       </div>
+
+
+      <!-- ================= PRODUCT PREVIEW ================= -->
+      <div class="visual-wrap">
+
+        <!-- Floating notification -->
+        <div class="floating-card card-top">
+
+          <div class="small-icon">✓</div>
+
+          <div>
+            <strong>Task completed</strong>
+            <span>Landing page approved</span>
+          </div>
+
+        </div>
+
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+
+          <div class="dashboard-top">
+
+            <div class="window-dots">
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+
+            <div class="dashboard-pill">
+              ● LIVE
+            </div>
+
+          </div>
+
+
+          <div class="dashboard-body">
+
+            <aside class="side-panel">
+
+              <div class="side-logo">
+                TF
+              </div>
+
+              <span class="active-item">Overview</span>
+              <span>Projects</span>
+              <span>Tasks</span>
+              <span>Team</span>
+              <span>Settings</span>
+
+            </aside>
+
+
+            <div class="main-panel">
+
+              <div class="panel-heading">
+
+                <div>
+                  <p>Thursday, August 13</p>
+                  <h3>Good evening 👋</h3>
+                </div>
+
+                <div class="profile-mini">
+                  P
+                </div>
+
+              </div>
+
+
+              <!-- Statistics -->
+              <div class="mini-stats">
+
+                <div>
+                  <span>Projects</span>
+                  <strong>12</strong>
+                  <small>+3 this month</small>
+                </div>
+
+                <div>
+                  <span>Completed</span>
+                  <strong>86%</strong>
+                  <small>+12% progress</small>
+                </div>
+
+                <div>
+                  <span>Team</span>
+                  <strong>24</strong>
+                  <small>3 new members</small>
+                </div>
+
+              </div>
+
+
+              <!-- Chart -->
+              <div class="chart-card">
+
+                <div class="chart-head">
+
+                  <div>
+                    <span>Weekly progress</span>
+                    <strong>82%</strong>
+                  </div>
+
+                  <span class="chart-filter">
+                    This week ▾
+                  </span>
+
+                </div>
+
+
+                <div class="chart">
+
+                  <span class="bar" style="height:42%"></span>
+                  <span class="bar" style="height:58%"></span>
+                  <span class="bar" style="height:50%"></span>
+                  <span class="bar" style="height:72%"></span>
+                  <span class="bar tall" style="height:88%"></span>
+                  <span class="bar" style="height:68%"></span>
+                  <span class="bar accent" style="height:94%"></span>
+
+                </div>
+
+
+                <div class="days">
+
+                  <span>M</span>
+                  <span>T</span>
+                  <span>W</span>
+                  <span>T</span>
+                  <span>F</span>
+                  <span>S</span>
+                  <span>S</span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Floating progress card -->
+        <div class="floating-card card-bottom">
+
+          <div class="progress-ring">
+            86%
+          </div>
+
+          <div>
+            <strong>Project progress</strong>
+            <span>Right on schedule</span>
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
 
+
+    <!-- ================= TRUST STRIP ================= -->
+    <section class="trust-strip">
+
+      <p>BUILT FOR FOCUSED TEAMS</p>
+
+      <div class="trust-items">
+
+        <span>◆ NOVA</span>
+        <span>◈ PIXELLAB</span>
+        <span>◉ ORBIT</span>
+        <span>✦ NORTHSTAR</span>
+        <span>◌ KINETIC</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
     <section class="section" id="features">
-      <div class="section-heading">
-        <p class="eyebrow">FEATURES</p>
-        <h2>Everything you need to move forward.</h2>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <div class="icon">01</div>
-          <h3>Plan Clearly</h3>
-          <p>Create simple project plans and keep important tasks visible in one place.</p>
-        </article>
-        <article class="card">
-          <div class="icon">02</div>
-          <h3>Work Together</h3>
-          <p>Bring your team into the same workflow with clear responsibilities and updates.</p>
-        </article>
-        <article class="card">
-          <div class="icon">03</div>
-          <h3>Track Progress</h3>
-          <p>See what is completed, what is next, and where your project needs attention.</p>
-        </article>
-      </div>
-    </section>
 
-    <section class="section split" id="about">
-      <div>
-        <p class="eyebrow">ABOUT NOVALAUNCH</p>
-        <h2>Designed to be simple, useful, and easy to learn.</h2>
-      </div>
-      <div>
+      <div class="section-heading centered">
+
+        <div class="badge light-badge">
+          WHY TECHFLOW?
+        </div>
+
+        <h2>
+          Everything your workflow needs
+          in one clean place.
+        </h2>
+
         <p>
-          This landing page demonstrates semantic HTML, responsive CSS, navigation, cards, buttons,
-          spacing, typography, and a consistent visual system.
+          Simple tools, clear information, and less time spent
+          figuring out where things are.
         </p>
-        <a class="text-link" href="#contact">Learn more →</a>
+
       </div>
+
+
+      <div class="feature-grid">
+
+        <article class="feature-card">
+
+          <div class="feature-icon purple">
+            01
+          </div>
+
+          <h3>Plan clearly</h3>
+
+          <p>
+            Break big ideas into simple tasks with a workflow
+            that everyone can understand.
+          </p>
+
+          <a href="#contact">
+            Explore feature <span>↗</span>
+          </a>
+
+        </article>
+
+
+        <article class="feature-card featured">
+
+          <div class="feature-icon blue">
+            02
+          </div>
+
+          <h3>Work together</h3>
+
+          <p>
+            Keep projects, responsibilities, updates, and
+            communication connected in one place.
+          </p>
+
+          <a href="#contact">
+            Explore feature <span>↗</span>
+          </a>
+
+        </article>
+
+
+        <article class="feature-card">
+
+          <div class="feature-icon orange">
+            03
+          </div>
+
+          <h3>Track progress</h3>
+
+          <p>
+            See what's finished, what needs attention,
+            and how your project is performing.
+          </p>
+
+          <a href="#contact">
+            Explore feature <span>↗</span>
+          </a>
+
+        </article>
+
+      </div>
+
     </section>
 
+
+    <!-- ================= ABOUT ================= -->
+    <section class="split-section" id="about">
+
+      <div class="split-visual">
+
+        <div class="window-card">
+
+          <div class="window-header">
+
+            <span>Project overview</span>
+
+            <span class="tiny-live">
+              ● LIVE
+            </span>
+
+          </div>
+
+
+          <div class="task-row done">
+
+            <span class="check">✓</span>
+
+            <div>
+              <strong>Research ideas</strong>
+              <small>Completed</small>
+            </div>
+
+            <span class="status">
+              Done
+            </span>
+
+          </div>
+
+
+          <div class="task-row">
+
+            <span class="check">2</span>
+
+            <div>
+              <strong>Design homepage</strong>
+              <small>In progress</small>
+            </div>
+
+            <span class="status progress">
+              62%
+            </span>
+
+          </div>
+
+
+          <div class="task-row">
+
+            <span class="check">3</span>
+
+            <div>
+              <strong>Prepare demo</strong>
+              <small>Tomorrow</small>
+            </div>
+
+            <span class="status upcoming">
+              Next
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="split-copy">
+
+        <div class="badge light-badge">
+          ABOUT TECHFLOW
+        </div>
+
+        <h2>
+          Designed for people who want
+          less clutter and more progress.
+        </h2>
+
+        <p>
+          TechFlow combines project planning, collaboration,
+          and progress tracking into a focused digital workspace.
+          This landing page demonstrates responsive HTML/CSS design
+          with a modern visual system.
+        </p>
+
+
+        <div class="check-list">
+
+          <div>
+            <span>✓</span>
+            Simple navigation
+          </div>
+
+          <div>
+            <span>✓</span>
+            Responsive layout
+          </div>
+
+          <div>
+            <span>✓</span>
+            Consistent typography
+          </div>
+
+          <div>
+            <span>✓</span>
+            Clean component cards
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
     <section class="section review-section" id="reviews">
-      <div class="section-heading">
-        <p class="eyebrow">TESTIMONIAL</p>
-        <h2>Made for focused teams.</h2>
+
+      <div class="section-heading centered">
+
+        <div class="badge light-badge">
+          REVIEWS
+        </div>
+
+        <h2>
+          What users might say.
+        </h2>
+
       </div>
-      <blockquote>
-        “The layout is clean, easy to scan, and gives a product a professional first impression.”
-        <cite>— Sample User</cite>
-      </blockquote>
+
+
+      <div class="review-grid">
+
+        <article class="review-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <p>
+            “The interface feels polished and makes it
+            much easier to understand what the team should do next.”
+          </p>
+
+          <div class="reviewer">
+
+            <span class="review-avatar">
+              A
+            </span>
+
+            <div>
+              <strong>Arjun R.</strong>
+              <small>Product Designer</small>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="review-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <p>
+            “A clean layout with the right amount of information.
+            Nothing feels overwhelming.”
+          </p>
+
+          <div class="reviewer">
+
+            <span class="review-avatar">
+              S
+            </span>
+
+            <div>
+              <strong>Sarah M.</strong>
+              <small>Project Manager</small>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="review-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <p>
+            “The progress view gives our team a quick picture
+            of where the project stands.”
+          </p>
+
+          <div class="reviewer">
+
+            <span class="review-avatar">
+              K
+            </span>
+
+            <div>
+              <strong>Kiran P.</strong>
+              <small>Developer</small>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
     </section>
 
-    <section class="contact" id="contact">
+
+    <!-- ================= CONTACT ================= -->
+    <section class="cta-section" id="contact">
+
       <div>
-        <p class="eyebrow">READY TO START?</p>
-        <h2>Turn your next idea into a real project.</h2>
+
+        <div class="badge cta-badge">
+          READY TO START?
+        </div>
+
+        <h2>
+          Turn your next idea into a real project.
+        </h2>
+
+        <p>
+          Have a project idea? Let's connect and build something useful.
+        </p>
+
       </div>
-      <a class="btn light" href="mailto:pradeeshvmcs426@gmail.com">Contact Us</a>
+
+
+      <a
+        class="btn cta-button"
+        href="mailto:pradeeshvmcs426@gmail.com"
+      >
+        Contact Me <span>↗</span>
+      </a>
+
     </section>
+
   </main>
 
+
+  <!-- ================= FOOTER ================= -->
   <footer>
-    <p>© 2026 TechFlow. Internship project — Web Development & Designing.</p>
-    <div>
-      <a href="#">GitHub</a>
-      <a href="#">LinkedIn</a>
-    </div>
+
+    <p>
+      © 2026 TechFlow • OASIS INFOBYTE Internship Project
+    </p>
+
+    <div class="social-icons">
+
+  <a
+    href="https://github.com/pradeeshvmcs426"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+    title="GitHub"
+  >
+    <i class="fa-brands fa-github"></i>
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/pradeeshvmcs426"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+    title="LinkedIn"
+  >
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+
+</div>
+
   </footer>
+
 </body>
 </html>
